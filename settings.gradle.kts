@@ -54,3 +54,6 @@ dependencyResolutionManagement {
         }
     }
 }
+
+include(":patches")
+include(":patches:stub")
