@@ -19,7 +19,7 @@ dependencies {
     implementation(libs.apksig)
 
     // Android API stubs defined here.
-    compileOnly(project(":patches:stub"))
+    compileOnly(project("com.google.android:android:4.1.1.4"))
 }
 
 tasks {
