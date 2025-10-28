@@ -29,3 +29,14 @@ jobs:
   contents: read
   packages: read
 
+  - name: Configure Gradle credentials
+  run: |
+    mkdir -p ~/.gradle
+    {
+      echo "gpr.user=${GITHUB_ACTOR}"
+      echo "gpr.key=${GITHUB_TOKEN}"
+    } >> ~/.gradle/gradle.properties
+  env:
+    GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+
