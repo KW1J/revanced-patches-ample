@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright 2024 ReVanced. See https://github.com/ReVanced/revanced-branding -->
 <!--
 
     All strings must have a unique path, even if the same string is declared in two different apps.
@@ -45,13 +44,14 @@ Second \"item\" text"</string>
   <string name="revanced_check_environment_not_near_patch_time_invalid">Tá dáta tógála APK truaillithe</string>
   </patch>
   <patch id="misc.dns.checkWatchHistoryDomainNameResolutionPatch">
-  <string name="revanced_check_watch_history_domain_name_dialog_title">Rabhadh</string>
+  <string name="revanced_check_watch_history_domain_name_dialog_title">Fógra ReVanced</string>
   <string name="revanced_check_watch_history_domain_name_dialog_message">Níl do stair faire á sábháil.&lt;br&gt;&lt;br&gt;Is é is dóichí gur seachfhreastalaí fógraí DNS nó seachfhreastalaí líonra is cúis leis seo.&lt;br&gt;&lt;br&gt; Chun é seo a réiteach, déan liosta bán &lt;b&gt;s.youtube.com&lt;/b&gt; nó gach seachfhreastalaí DNS a mhúchadh.</string>
   <string name="revanced_check_watch_history_domain_name_dialog_ignore">Ná taispeáin arís</string>
   </patch>
   <patch id="misc.settings.settingsResourcePatch">
   <string name="revanced_settings_submenu_title">Socruithe</string>
   <string name="revanced_settings_confirm_user_dialog_title">An bhfuil tú cinnte gur mhaith leat dul ar aghaidh?</string>
+  <string name="revanced_settings_save">Sábháil</string>
   <string name="revanced_settings_reset">Athshocrú</string>
   <string name="revanced_settings_reset_color">Dath a athshocrú</string>
   <string name="revanced_settings_color_invalid">Dath neamhbhailí</string>
@@ -164,6 +164,14 @@ Ní chuirfear ar an eolas thú faoi aon imeachtaí gan choinne."</string>
   <string name="revanced_debug_logs_clear_buffer_title">Glan logaí dífhabhtaithe</string>
   <string name="revanced_debug_logs_clear_buffer_summary">Glanann sé gach loga dífhabhtaithe ReVanced stóráilte</string>
   <string name="revanced_debug_logs_clear_toast">Lógaí glanta</string>
+  <string name="revanced_debug_feature_flags_manager_title">Bainisteoir bratacha gnéithe</string>
+  <string name="revanced_debug_feature_flags_manager_summary">Bainistigh bratacha gné booléacha</string>
+  <string name="revanced_debug_feature_flags_manager_active_header">Bratacha gníomhacha (%d)</string>
+  <string name="revanced_debug_feature_flags_manager_blocked_header">Bratacha blocáilte (%d)</string>
+  <string name="revanced_debug_feature_flags_manager_search_hint">Cuardaigh bratacha...</string>
+  <string name="revanced_debug_feature_flags_manager_toast_saved">Bratacha sábháilte</string>
+  <string name="revanced_debug_feature_flags_manager_toast_reset">Bratacha athshocraithe</string>
+  <string name="revanced_debug_feature_flags_manager_toast_copied">Bratacha cóipeáilte chuig an ngearrthaisce</string>
   </patch>
   <patch id="misc.privacy.sanitizeSharingLinksPatch">
   <string name="revanced_sanitize_sharing_links_title">Glan na naisc roinnte</string>
@@ -274,6 +282,9 @@ Mar sin féin, logálfaidh sé seo roinnt sonraí úsáideora freisin, mar shamp
   <string name="revanced_hide_video_recommendation_labels_title">Folaigh lipéid mholtaí físeáin</string>
   <string name="revanced_hide_video_recommendation_labels_summary_on">Tá lipéid \'D\'fhéach daoine freisin ar\' agus \'B\'fhéidir gur mhaith leat freisin\' sna torthaí cuardaigh i bhfolach</string>
   <string name="revanced_hide_video_recommendation_labels_summary_off">Taispeántar lipéid ‘Daoine a d’fhéach freisin’ agus ‘B’fhéidir gur mhaith leat freisin’ i dtorthaí cuardaigh</string>
+  <string name="revanced_hide_visual_spacer_title">Folaigh spásaire amhairc</string>
+  <string name="revanced_hide_visual_spacer_summary_on">Tá spásaire amhairc i bhfolach</string>
+  <string name="revanced_hide_visual_spacer_summary_off">Taispeántar spásaire amhairc</string>
   <!-- https://logos.fandom.com/wiki/YouTube/Yoodles -->
   <string name="revanced_hide_doodles_title">Folaigh YouTube Doodles</string>
   <string name="revanced_hide_doodles_summary_on">Tá beochan YouTube Doodles ar an lógó i bhfolach</string>
@@ -328,15 +339,27 @@ Má tá Doodle á thaispeáint faoi láthair i do réigiún agus má tá an tsu�
   <string name="revanced_hide_how_this_was_made_section_title">Folaigh \'Conas a rinneadh an t-ábhar seo\'</string>
   <string name="revanced_hide_how_this_was_made_section_summary_on">Tá an chuid Conas a rinneadh an t-ábhar seo i bhfolach</string>
   <string name="revanced_hide_how_this_was_made_section_summary_off">Taispeántar an chuid Conas a rinneadh an t-ábhar seo</string>
+  <string name="revanced_hide_hype_points_title">Folaigh pointí Hype</string>
+  <string name="revanced_hide_hype_points_summary_on">Tá pointí Hype i bhfolach</string>
+  <string name="revanced_hide_hype_points_summary_off">Taispeántar pointí Hype</string>
   <string name="revanced_hide_podcast_section_title">Folaigh \'Déan iniúchadh ar an bpodchraoladh\'</string>
   <string name="revanced_hide_podcast_section_summary_on">Tá an chuid Déan iniúchadh ar an bpodchraoladh i bhfolach</string>
   <string name="revanced_hide_podcast_section_summary_off">Taispeántar an chuid Déan iniúchadh ar an bpodchraoladh</string>
+  <string name="revanced_hide_featured_links_section_title">Folaigh naisc le feiceáil</string>
+  <string name="revanced_hide_featured_links_section_summary_on">Tá an chuid nasc le feiceáil i bhfolach</string>
+  <string name="revanced_hide_featured_links_section_summary_off">Taispeántar an chuid nasc le feiceáil</string>
+  <string name="revanced_hide_featured_videos_section_title">Folaigh físeáin le feiceáil</string>
+  <string name="revanced_hide_featured_videos_section_summary_on">Tá an chuid físeán le feiceáil i bhfolach</string>
+  <string name="revanced_hide_featured_videos_section_summary_off">Taispeántar an chuid físeán le feiceáil</string>
   <string name="revanced_hide_info_cards_section_title">Folaigh cártaí eolais</string>
   <string name="revanced_hide_info_cards_section_summary_on">Tá an chuid cártaí faisnéise i bhfolach</string>
   <string name="revanced_hide_info_cards_section_summary_off">Taispeántar rannán cártaí faisnéise</string>
   <string name="revanced_hide_key_concepts_section_title">Folaigh \'Príomhchoincheapa\'</string>
   <string name="revanced_hide_key_concepts_section_summary_on">Tá an chuid Príomhchoincheapa i bhfolach</string>
   <string name="revanced_hide_key_concepts_section_summary_off">Taispeántar an chuid coincheapa lárnacha</string>
+  <string name="revanced_hide_subscribe_button_title">Folaigh cnaipe Liostáil</string>
+  <string name="revanced_hide_subscribe_button_summary_on">Tá an cnaipe Liostáil i bhfolach</string>
+  <string name="revanced_hide_subscribe_button_summary_off">Taispeántar cnaipe Liostáil</string>
   <string name="revanced_hide_transcript_section_title">Folaigh Tras-scríbhinn</string>
   <string name="revanced_hide_transcript_section_summary_on">Tá alt an tras-scríbhinn i bhfolach</string>
   <string name="revanced_hide_transcript_section_summary_off">Taispeántar alt an tras-scríbhinn</string>
@@ -358,24 +381,32 @@ Má tá Doodle á thaispeáint faoi láthair i do réigiún agus má tá an tsu�
   <string name="revanced_hide_filter_bar_feed_in_history_summary_off">Taispeántar i stair faire</string>
   <string name="revanced_channel_screen_title">Leathanach cainéil</string>
   <string name="revanced_channel_screen_summary">Folaigh nó taispeáin comhpháirteanna leathanach cainéil</string>
+  <!-- 'Community' should be translated with the same localized wording that YouTube displays. -->
+  <string name="revanced_hide_community_button_title">Folaigh cnaipe an Phobail</string>
+  <string name="revanced_hide_community_button_summary_on">Tá cnaipe an Phobail i bhfolach</string>
+  <string name="revanced_hide_community_button_summary_off">Taispeántar cnaipe an Phobail</string>
   <!-- 'For You' should be translated using the same localized wording YouTube displays. -->
   <string name="revanced_hide_for_you_shelf_title">Folaigh seilf \'Duitse\'</string>
   <string name="revanced_hide_for_you_shelf_summary_on">Tá seilf \'Maidir Leat\' i bhfolach</string>
   <string name="revanced_hide_for_you_shelf_summary_off">Tá seilf \'Maidir Leat\' le feiceáil</string>
+  <!-- 'Join' should be translated with the same localized wording that YouTube displays. -->
+  <string name="revanced_hide_join_button_title">Folaigh cnaipe Glac páirt</string>
+  <string name="revanced_hide_join_button_summary_on">Tá cnaipe Glac páirt i bhfolach</string>
+  <string name="revanced_hide_join_button_summary_off">Taispeántar cnaipe Glac páirt</string>
   <string name="revanced_hide_links_preview_title">Folaigh réamhamharc naisc</string>
   <string name="revanced_hide_links_preview_summary_on">Tá réamhamharc naisc i bhfolach</string>
   <string name="revanced_hide_links_preview_summary_off">Taispeántar réamhamharc naisc</string>
   <string name="revanced_hide_members_shelf_title">Folaigh seilf na mball</string>
   <string name="revanced_hide_members_shelf_summary_on">Tá seilf na mball i bhfolach</string>
   <string name="revanced_hide_members_shelf_summary_off">Taispeántar seilf na gcomhaltaí</string>
-  <!-- 'Visit Community' should be translated with the same localized wording that YouTube displays. -->
-  <string name="revanced_hide_visit_community_button_title">Folaigh cnaipe \"Tabhair cuairt ar an gComhphobal\"</string>
-  <string name="revanced_hide_visit_community_button_summary_on">Tá cnaipe \"Tabhair cuairt ar an gComhphobal\" i bhfolach</string>
-  <string name="revanced_hide_visit_community_button_summary_off">Taispeántar an cnaipe Tabhair Cuairt ar an bPobal</string>
-  <!-- 'Visit store' should be translated with the same localized wording that YouTube displays. -->
-  <string name="revanced_hide_visit_store_button_title">Folaigh an cnaipe \'Tabhair cuairt ar an siopa\'</string>
-  <string name="revanced_hide_visit_store_button_summary_on">Tá cnaipe \'Tabhair Cuairt ar an Siopa\' i bhfolach</string>
-  <string name="revanced_hide_visit_store_button_summary_off">Taispeántar an cnaipe Tabhair cuairt ar an siopa</string>
+  <!-- 'Store' should be translated with the same localized wording that YouTube displays. -->
+  <string name="revanced_hide_store_button_title">Folaigh cnaipe an tSiopa</string>
+  <string name="revanced_hide_store_button_summary_on">Tá cnaipe an tSiopa i bhfolach</string>
+  <string name="revanced_hide_store_button_summary_off">Taispeántar cnaipe an tSiopa</string>
+  <!-- 'Subscribe' should be translated with the same localized wording that YouTube displays. -->
+  <string name="revanced_hide_subscribe_button_in_channel_page_title">Folaigh cnaipe Liostáil</string>
+  <string name="revanced_hide_subscribe_button_in_channel_page_summary_on">Tá an cnaipe Liostáil i bhfolach</string>
+  <string name="revanced_hide_subscribe_button_in_channel_page_summary_off">Taispeántar cnaipe Liostáil</string>
   <string name="revanced_comments_screen_title">Tráchtanna</string>
   <string name="revanced_comments_screen_summary">Folaigh nó taispeáin comhpháirteanna na rannóige tráchtanna</string>
   <string name="revanced_hide_comments_ai_chat_summary_title">Folaigh achoimre comhrá IS</string>
@@ -517,11 +548,11 @@ Níl an ghné seo ar fáil ach do ghléasanna níos sine"</string>
   <string name="revanced_share_copy_url_success">URL cóipeáilte chuig gearr</string>
   <string name="revanced_share_copy_url_timestamp_success">URL le stampa ama cóipeáilte</string>
   <string name="revanced_copy_video_url_title">Taispeáin an cnaipe cóipeála URL an fhíseáin</string>
-  <string name="revanced_copy_video_url_summary_on">Taispeántar an cnaipe. Tapáil chun URL an fhíseáin a chóipeáil. Tapáil agus coinnigh síos chun cóipeáil leis an stampa ama</string>
-  <string name="revanced_copy_video_url_summary_off">Ní thaispeántar an cnaipe</string>
+  <string name="revanced_copy_video_url_summary_on">Taispeántar cnaipe Cóipeáil URL físeáin. Tapáil chun URL an fhíseáin a chóipeáil. Tapáil agus coinnigh síos chun cóipeála leis an stampa ama</string>
+  <string name="revanced_copy_video_url_summary_off">Ní thaispeántar cnaipe Cóipeáil URL físeáin</string>
   <string name="revanced_copy_video_url_timestamp_title">Taispeáin cnaipe URL stampa ama cóipeáil</string>
-  <string name="revanced_copy_video_url_timestamp_summary_on">Taispeántar an cnaipe. Tapáil chun URL físeáin a chóipeáil le stampa ama. Tapáil agus coinnigh chun cóip a dhéanamh gan stampa ama</string>
-  <string name="revanced_copy_video_url_timestamp_summary_off">Ní thaispeántar an cnaipe</string>
+  <string name="revanced_copy_video_url_timestamp_summary_on">Taispeántar cnaipe Cóipeáil URL stampa ama. Tapáil chun URL físeáin a chóipeáil le stampa ama. Tapáil agus coinnigh chun cóipe a dhéanamh gan stampa ama</string>
+  <string name="revanced_copy_video_url_timestamp_summary_off">Ní thaispeántar cnaipe Cóipeáil URL stampa ama</string>
   </patch>
   <patch id="interaction.dialog.removeViewerDiscretionDialogPatch">
   <string name="revanced_remove_viewer_discretion_dialog_title">Bain dialóg rogha féachana</string>
@@ -530,7 +561,7 @@ Níl an ghné seo ar fáil ach do ghléasanna níos sine"</string>
   <string name="revanced_remove_viewer_discretion_dialog_user_dialog_message">Ní sheachnaíonn sé seo an srian aoise. Ní ghlacann sé leis go huathoibríoch.</string>
   </patch>
   <patch id="layout.hide.signintotv.disableSignInToTvPopupPatch">
-  <string name="revanced_disable_signin_to_tv_popup_title">Díchumasaigh an Aníos Sínigh Isteach sa Teilifís</string>
+  <string name="revanced_disable_signin_to_tv_popup_title">Díchumasaigh an aníos ‘Sínigh Isteach sa Teilifís’</string>
   <string name="revanced_disable_signin_to_tv_popup_summary_on">Tá preab aníos sínithe isteach sa teilifís díchumasaithe</string>
   <string name="revanced_disable_signin_to_tv_popup_summary_off">Tá preab aníos sínithe isteach sa teilifís cumasaithe</string>
   </patch>
@@ -660,7 +691,7 @@ Coigeartaigh an toirt trí swipeáil go hingearach ar thaobh na láimhe deise de
   <string name="revanced_hide_download_button_summary_on">Tá an cnaipe íosluchtaithe i bhfolach</string>
   <string name="revanced_hide_download_button_summary_off">Taispeántar cnaipe íoslódáil</string>
   <!-- 'Hype' should be translated with the same localized wording that YouTube displays.
-                  This button only shows on videos uploaded by the logged in user. -->
+                  This button only shows on videos uploaded by the logged-in user. -->
   <string name="revanced_hide_hype_button_title">Folaigh Hype</string>
   <string name="revanced_hide_hype_button_summary_on">Tá cnaipe an Hype i bhfolach</string>
   <string name="revanced_hide_hype_button_summary_off">Taispeántar cnaipe Hype</string>
@@ -769,23 +800,23 @@ Mura dtagann aon athrú ar an socrú seo, bain triail as mód Incognito a chur a
   <string name="revanced_hide_player_flyout_speed_title">Folaigh luas athsheinm</string>
   <string name="revanced_hide_player_flyout_speed_summary_on">Tá roghchlár luas athsheinm i bhfolach</string>
   <string name="revanced_hide_player_flyout_speed_summary_off">Taispeántar roghchlár luas athsheinm</string>
-  <!-- 'More info' should be translated using the same localized wording YouTube displays for the menu item.
-                  This menu only appears for some videos. Translate the name normally if the menu cannot be found. -->
-  <string name="revanced_hide_player_flyout_more_info_title">Folaigh Tuilleadh eolais</string>
-  <string name="revanced_hide_player_flyout_more_info_summary_on">Tá tuilleadh eolais i bhfolach</string>
-  <string name="revanced_hide_player_flyout_more_info_summary_off">Taispeántar roghchlár tuilleadh eolais</string>
   <!-- 'Lock screen' should be translated using the same localized wording YouTube displays for the menu item. -->
   <string name="revanced_hide_player_flyout_lock_screen_title">Folaigh scáileán Glas</string>
   <string name="revanced_hide_player_flyout_lock_screen_summary_on">Tá roghchlár scáileán glas i bhfolach</string>
   <string name="revanced_hide_player_flyout_lock_screen_summary_off">Taispeántar roghchlár an scáileáin ghlasála</string>
+  <!-- 'Listen with YouTube Music' should be translated using the same localized wording YouTube displays for the menu item. -->
+  <string name="revanced_hide_player_flyout_listen_with_youtube_music_title">Folaigh Éist le YouTube Music</string>
+  <string name="revanced_hide_player_flyout_listen_with_youtube_music_summary_on">Tá roghchlár Éist le YouTube Music i bhfolach</string>
+  <string name="revanced_hide_player_flyout_listen_with_youtube_music_summary_off">Taispeántar an roghchlár Éist le YouTube Music</string>
   <!-- 'Audio track' should be translated using the same localized wording YouTube displays for the menu item. -->
   <string name="revanced_hide_player_flyout_audio_track_title">Folaigh Rian Fuaime</string>
   <string name="revanced_hide_player_flyout_audio_track_summary_on">Tá roghchlár rian fuaime i bhfolach</string>
   <string name="revanced_hide_player_flyout_audio_track_summary_off">Taispeántar roghchlár rian fuaime</string>
-  <!-- 'Spoof video streams' should be the same translation used for 'revanced_spoof_video_streams_screen_title'. -->
+  <!-- 'Spoof video streams' should be the same translation used for 'revanced_spoof_video_streams_screen_title'.
+                  'Android No SDK' must be kept untranslated. -->
   <string name="revanced_hide_player_flyout_audio_track_not_available">"Tá roghchlár an rian fuaime i bhfolach
 
-Chun roghchlár an rian fuaime a thaispeáint, athraigh 'Sruthanna físeáin bhréige' go iPadOS"</string>
+Chun roghchlár an rian fuaime a thaispeáint, athraigh 'Sruthanna físeáin bhréige' go 'Android No SDK'"</string>
   <!-- 'Watch in VR' should be translated using the same localized wording YouTube displays for the menu item. -->
   <string name="revanced_hide_player_flyout_watch_in_vr_title">Folaigh Watch i VR</string>
   <string name="revanced_hide_player_flyout_watch_in_vr_summary_on">Tá an roghchlár Féach i VR i bhfolach</string>
@@ -861,13 +892,16 @@ Chun roghchlár an rian fuaime a thaispeáint, athraigh 'Sruthanna físeáin bhr
   <string name="revanced_hide_shorts_history_title">Folaigh Shorts i stair féachana</string>
   <string name="revanced_hide_shorts_history_summary_on">I bhfolach i stair féachana</string>
   <string name="revanced_hide_shorts_history_summary_off">Taispeántar i stair féachana</string>
-  <string name="revanced_hide_shorts_super_thanks_button_title">Folaigh cnaipe Ceannaigh Super Thanks</string>
+  <string name="revanced_hide_shorts_auto_dubbed_label_title">Folaigh lipéad ‘Uath-dhúbláilte’</string>
+  <string name="revanced_hide_shorts_auto_dubbed_label_summary_on">Tá an lipéad uath-dhúbláilte i bhfolach</string>
+  <string name="revanced_hide_shorts_auto_dubbed_label_summary_off">Taispeántar an lipéad uath-dhúbláilte</string>
+  <string name="revanced_hide_shorts_super_thanks_button_title">Folaigh cnaipe ‘Ceannaigh Super Thanks’</string>
   <string name="revanced_hide_shorts_super_thanks_button_summary_on">Cnaipe Ceannaigh Super Thanks i bhfolach</string>
   <string name="revanced_hide_shorts_super_thanks_button_summary_off">Taispeántar an cnaipe Ceannaigh Super Thanks</string>
   <string name="revanced_hide_shorts_effect_button_title">Folaigh cnaipe Éifeacht</string>
   <string name="revanced_hide_shorts_effect_button_summary_on">Tá cnaipe Éifeacht i bhfolach</string>
   <string name="revanced_hide_shorts_effect_button_summary_off">Taispeántar cnaipe Éifeacht</string>
-  <string name="revanced_hide_shorts_green_screen_button_title">Folaigh cnaipe Scáileáin Ghlais</string>
+  <string name="revanced_hide_shorts_green_screen_button_title">Folaigh cnaipe ‘Scáileáin Ghlais’</string>
   <string name="revanced_hide_shorts_green_screen_button_summary_on">Tá cnaipe Scáileáin Ghlais i bhfolach</string>
   <string name="revanced_hide_shorts_green_screen_button_summary_off">Taispeántar cnaipe Scáileáin Ghlais</string>
   <string name="revanced_hide_shorts_hashtag_button_title">Folaigh cnaipe Hashtag</string>
@@ -877,10 +911,13 @@ Chun roghchlár an rian fuaime a thaispeáint, athraigh 'Sruthanna físeáin bhr
   <string name="revanced_hide_shorts_join_button_title">Folaigh cnaipe Glac páirt</string>
   <string name="revanced_hide_shorts_join_button_summary_on">Tá cnaipe Glac páirt i bhfolach</string>
   <string name="revanced_hide_shorts_join_button_summary_off">Taispeántar cnaipe Glac páirt</string>
+  <string name="revanced_hide_shorts_live_preview_title">Folaigh réamhamharc beo</string>
+  <string name="revanced_hide_shorts_live_preview_summary_on">Tá réamhamharc beo i bhfolach</string>
+  <string name="revanced_hide_shorts_live_preview_summary_off">Taispeántar réamhamharc beo</string>
   <string name="revanced_hide_shorts_location_label_title">Folaigh lipéad suímh</string>
   <string name="revanced_hide_shorts_location_label_summary_on">Tá lipéad suímh i bhfolach</string>
   <string name="revanced_hide_shorts_location_label_summary_off">Taispeántar lipéad suímh</string>
-  <string name="revanced_hide_shorts_new_posts_button_title">Folaigh Cnaipe Poist nua</string>
+  <string name="revanced_hide_shorts_new_posts_button_title">Folaigh cnaipe ‘Poist nua’</string>
   <string name="revanced_hide_shorts_new_posts_button_summary_on">Tá cnaipe Poist nua i bhfolach</string>
   <string name="revanced_hide_shorts_new_posts_button_summary_off">Taispeántar cnaipe Poist nua</string>
   <string name="revanced_hide_shorts_paused_overlay_buttons_title">Folaigh cnaipí forleagan ar sos</string>
@@ -889,7 +926,7 @@ Chun roghchlár an rian fuaime a thaispeáint, athraigh 'Sruthanna físeáin bhr
   <string name="revanced_hide_shorts_preview_comment_title">Folaigh trácht réamhamhairc</string>
   <string name="revanced_hide_shorts_preview_comment_summary_on">Tá an trácht réamhamhairc i bhfolach</string>
   <string name="revanced_hide_shorts_preview_comment_summary_off">Taispeántar réamhamharc tráchta</string>
-  <string name="revanced_hide_shorts_save_sound_button_title">Folaigh an cnaipe Sábháil Ceoil</string>
+  <string name="revanced_hide_shorts_save_sound_button_title">Folaigh cnaipe ‘Sábháil Ceoil’</string>
   <string name="revanced_hide_shorts_save_sound_button_summary_on">Tá an cnaipe sábháil ceoil i bhfolach</string>
   <string name="revanced_hide_shorts_save_sound_button_summary_off">Taispeántar an cnaipe sábháil ceoil</string>
   <string name="revanced_hide_shorts_search_suggestions_title">Folaigh moltaí cuardaigh</string>
@@ -910,10 +947,10 @@ Chun roghchlár an rian fuaime a thaispeáint, athraigh 'Sruthanna físeáin bhr
   <string name="revanced_hide_shorts_upcoming_button_title">Folaigh cnaipe Ag Teacht</string>
   <string name="revanced_hide_shorts_upcoming_button_summary_on">Tá cnaipe Ag Teacht i bhfolach</string>
   <string name="revanced_hide_shorts_upcoming_button_summary_off">Taispeántar an cnaipe Ag Teacht</string>
-  <string name="revanced_hide_shorts_use_sound_button_title">Folaigh Úsáid an cnaipe fuaime seo</string>
+  <string name="revanced_hide_shorts_use_sound_button_title">Folaigh cnaipe ‘Úsáid an fhuaim seo’</string>
   <string name="revanced_hide_shorts_use_sound_button_summary_on">Tá an cnaipe Úsáid an fhuaim seo i bhfolach</string>
   <string name="revanced_hide_shorts_use_sound_button_summary_off">Taispeántar an cnaipe Úsáid an fhuaim seo</string>
-  <string name="revanced_hide_shorts_use_template_button_title">Folaigh an cnaipe Úsáid an teimpléad seo</string>
+  <string name="revanced_hide_shorts_use_template_button_title">Folaigh an cnaipe ‘Úsáid an teimpléad seo’</string>
   <string name="revanced_hide_shorts_use_template_button_summary_on">Tá an cnaipe Úsáid an teimpléid seo i bhfolach</string>
   <string name="revanced_hide_shorts_use_template_button_summary_off">Taispeántar an cnaipe Úsáid an teimpléid seo</string>
   <string name="revanced_hide_shorts_like_fountain_title">Folaigh an cnaipe Is maith liom \'beochan tobair\'</string>
@@ -1556,13 +1593,13 @@ D’fhéadfadh cáilíochtaí físe níos airde a bheith díghlasáilte ach d’
   </patch>
   <patch id="video.speed.button.playbackSpeedButtonPatch">
   <string name="revanced_playback_speed_dialog_button_title">Taispeáin cnaipe dialóg luais</string>
-  <string name="revanced_playback_speed_dialog_button_summary_on">Taispeántar an cnaipe. Tapáil agus coinnigh chun luas athsheinm a athshocrú go réamhshocrú</string>
-  <string name="revanced_playback_speed_dialog_button_summary_off">Ní thaispeántar an cnaipe</string>
+  <string name="revanced_playback_speed_dialog_button_summary_on">Taispeántar cnaipe dialóige luais. Tapáil agus coinnigh síos chun luas athsheinm a athshocrú go réamhshocrú</string>
+  <string name="revanced_playback_speed_dialog_button_summary_off">Ní thaispeántar cnaipe dialóige luais</string>
   </patch>
   <patch id="video.quality.button.videoQualityDialogButtonPatch">
   <string name="revanced_video_quality_dialog_button_title">Taispeáin cnaipe cáilíochta físeáin</string>
-  <string name="revanced_video_quality_dialog_button_summary_on">Taispeántar an cnaipe. Tapáil agus coinnigh síos chun an caighdeán a athshocrú go dtí an caighdeán réamhshocraithe</string>
-  <string name="revanced_video_quality_dialog_button_summary_off">Ní thaispeántar an cnaipe</string>
+  <string name="revanced_video_quality_dialog_button_summary_on">Taispeántar cnaipe cáilíochta físe. Tapáil agus coinnigh síos chun an caighdeán a athshocrú go dtí an caighdeán réamhshocraithe</string>
+  <string name="revanced_video_quality_dialog_button_summary_off">Ní thaispeántar cnaipe cáilíochta físe</string>
   </patch>
   <patch id="video.speed.custom.customPlaybackSpeedPatch">
   <string name="revanced_custom_speed_menu_title">Roghchlár luas athsheinm saincheaptha</string>
@@ -1659,15 +1696,29 @@ D’fhéadfadh sé go mbeadh stad nó go gcaillfí frámaí ag athsheinm físe l
   <string name="revanced_music_play_permanent_repeat_summary_on">Tá athrá buan cumasaithe</string>
   <string name="revanced_music_play_permanent_repeat_summary_off">Tá athrá buan díchumasaithe</string>
   </patch>
-  <patch id="layout.castbutton.hideCastButton">
+  <patch id="layout.buttons.hideButtons">
   <string name="revanced_music_hide_cast_button_title">Folaigh an cnaipe teilgthe</string>
   <string name="revanced_music_hide_cast_button_summary_on">Tá an cnaipe teilgthe i bhfolach</string>
   <string name="revanced_music_hide_cast_button_summary_off">Taispeántar an cnaipe teilgthe</string>
+  <string name="revanced_music_hide_history_button_title">Folaigh cnaipe na staire</string>
+  <string name="revanced_music_hide_history_button_summary_on">Tá cnaipe na staire i bhfolach</string>
+  <string name="revanced_music_hide_history_button_summary_off">Taispeántar cnaipe na staire</string>
+  <string name="revanced_music_hide_notification_button_title">Folaigh cnaipe fógraí</string>
+  <string name="revanced_music_hide_notification_button_summary_on">Tá cnaipe fógraí i bhfolach</string>
+  <string name="revanced_music_hide_notification_button_summary_off">Taispeántar cnaipe fógraí</string>
+  <string name="revanced_music_hide_search_button_title">Folaigh cnaipe cuardaigh</string>
+  <string name="revanced_music_hide_search_button_summary_on">Tá cnaipe cuardaigh i bhfolach</string>
+  <string name="revanced_music_hide_search_button_summary_off">Taispeántar an cnaipe cuardaigh</string>
   </patch>
   <patch id="layout.compactheader.hideCategoryBar">
   <string name="revanced_music_hide_category_bar_title">Folaigh an barra catagóirí</string>
   <string name="revanced_music_hide_category_bar_summary_on">Tá an barra catagóirí i bhfolach</string>
   <string name="revanced_music_hide_category_bar_summary_off">Taispeántar an barra catagóirí</string>
+  </patch>
+  <patch id="layout.miniplayercolor.changeMiniplayerColor">
+  <string name="revanced_music_change_miniplayer_color_title">Athraigh dath an mhion-imreoir</string>
+  <string name="revanced_music_change_miniplayer_color_summary_on">Tá dath an mhion-imreoir ag teacht leis an imreoir lánscáileáin</string>
+  <string name="revanced_music_change_miniplayer_color_summary_off">Úsáideann an mion-imreoir an dath réamhshocraithe</string>
   </patch>
   <patch id="layout.navigationbar.navigationBarPatch">
   <string name="revanced_music_navigation_bar_screen_title">Barra nascleanúna</string>

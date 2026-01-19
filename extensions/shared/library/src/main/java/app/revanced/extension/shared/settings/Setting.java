@@ -59,6 +59,23 @@ public abstract class Setting<T> {
     }
 
     /**
+     * Availability based on a single parent setting being disabled.
+     */
+    public static Availability parentNot(BooleanSetting parent) {
+        return new Availability() {
+            @Override
+            public boolean isAvailable() {
+                return !parent.get();
+            }
+
+            @Override
+            public List<Setting<?>> getParentSettings() {
+                return Collections.singletonList(parent);
+            }
+        };
+    }
+
+    /**
      * Availability based on all parents being enabled.
      */
     public static Availability parentsAll(BooleanSetting... parents) {
@@ -392,10 +409,13 @@ public abstract class Setting<T> {
 
     /**
      * Get the parent Settings that this setting depends on.
-     * @return List of parent Settings (e.g., BooleanSetting or EnumSetting), or empty list if no dependencies exist.
+     * @return List of parent Settings, or empty list if no dependencies exist.
+     *         Defensive: handles null availability or missing getParentSettings() override.
      */
     public List<Setting<?>> getParentSettings() {
-        return availability == null ? Collections.emptyList() : availability.getParentSettings();
+        return availability == null
+                ? Collections.emptyList()
+                : Objects.requireNonNullElse(availability.getParentSettings(), Collections.emptyList());
     }
 
     /**

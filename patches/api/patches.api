@@ -1,3 +1,7 @@
+public final class DisableReelsScrollingPatchKt {
+	public static final fun getDisableReelsScrollingPatch ()Lapp/revanced/patcher/patch/BytecodePatch;
+}
+
 public final class app/revanced/patches/all/misc/activity/exportall/ExportAllActivitiesPatchKt {
 	public static final fun getExportAllActivitiesPatch ()Lapp/revanced/patcher/patch/ResourcePatch;
 }
@@ -54,6 +58,10 @@ public final class app/revanced/patches/all/misc/connectivity/location/hide/Hide
 
 public final class app/revanced/patches/all/misc/connectivity/telephony/sim/spoof/SpoofSimCountryPatchKt {
 	public static final fun getSpoofSimCountryPatch ()Lapp/revanced/patcher/patch/BytecodePatch;
+}
+
+public final class app/revanced/patches/all/misc/connectivity/telephony/sim/spoof/SpoofSimProviderPatchKt {
+	public static final fun getSpoofSimProviderPatch ()Lapp/revanced/patcher/patch/BytecodePatch;
 }
 
 public final class app/revanced/patches/all/misc/connectivity/wifi/spoof/SpoofWifiPatchKt {
@@ -200,12 +208,25 @@ public final class app/revanced/patches/dcinside/ads/DisableCommentAdPatchKt {
 	public static final fun getDisableCommentAdPatch ()Lapp/revanced/patcher/patch/BytecodePatch;
 }
 
+public final class app/revanced/patches/dcinside/ads/DisableImageAdPatchKt {
+	public static final fun getDisableImageAdPatch ()Lapp/revanced/patcher/patch/BytecodePatch;
+}
+
 public final class app/revanced/patches/dcinside/ads/HideMainAdPatchKt {
 	public static final fun getHideMainAdPatch ()Lapp/revanced/patcher/patch/BytecodePatch;
 }
 
+public final class app/revanced/patches/dcinside/ads/fingerprints/DimensFingerprintKt {
+	public static final fun getGetMinimumDimensFingerprint ()Lapp/revanced/patcher/Fingerprint;
+	public static final fun getReadFooterAdContainerSetupFingerprint ()Lapp/revanced/patcher/Fingerprint;
+}
+
 public final class app/revanced/patches/dcinside/integrity/BypassGetTextPatchKt {
 	public static final fun getBypassGetTextPath ()Lapp/revanced/patcher/patch/BytecodePatch;
+}
+
+public final class app/revanced/patches/dcinside/integrity/SpoofSignaturePatchKt {
+	public static final fun getSpoofSignaturePatch ()Lapp/revanced/patcher/patch/BytecodePatch;
 }
 
 public final class app/revanced/patches/dcinside/misc/DisableUpdateCheckPatchKt {
@@ -218,6 +239,10 @@ public final class app/revanced/patches/dcinside/onestore/EnableOnestoreFeatureP
 
 public final class app/revanced/patches/dcinside/packagename/UpdateProviderPatchKt {
 	public static final fun getUpdateProviderPatch ()Lapp/revanced/patcher/patch/ResourcePatch;
+}
+
+public final class app/revanced/patches/disneyplus/ads/SkipAdsPatchKt {
+	public static final fun getSkipAdsPatch ()Lapp/revanced/patcher/patch/BytecodePatch;
 }
 
 public final class app/revanced/patches/duolingo/ad/DisableAdsPatchKt {
@@ -296,6 +321,10 @@ public final class app/revanced/patches/iconpackstudio/misc/pro/UnlockProPatchKt
 	public static final fun getUnlockProPatch ()Lapp/revanced/patcher/patch/BytecodePatch;
 }
 
+public final class app/revanced/patches/idaustria/detection/deviceintegrity/RemoveDeviceIntegrityChecksPatchKt {
+	public static final fun getRemoveDeviceIntegrityChecksPatch ()Lapp/revanced/patcher/patch/BytecodePatch;
+}
+
 public final class app/revanced/patches/idaustria/detection/root/RootDetectionPatchKt {
 	public static final fun getRootDetectionPatch ()Lapp/revanced/patcher/patch/BytecodePatch;
 }
@@ -314,6 +343,10 @@ public final class app/revanced/patches/instagram/ads/HideAdsPatchKt {
 
 public final class app/revanced/patches/instagram/feed/LimitFeedToFollowedProfilesKt {
 	public static final fun getLimitFeedToFollowedProfiles ()Lapp/revanced/patcher/patch/BytecodePatch;
+}
+
+public final class app/revanced/patches/instagram/ghost/story/AnonymousStoryViewingPatchKt {
+	public static final fun getAnonymousStoryViewingPatch ()Lapp/revanced/patcher/patch/BytecodePatch;
 }
 
 public final class app/revanced/patches/instagram/hide/explore/HideExploreFeedKt {
@@ -354,6 +387,10 @@ public final class app/revanced/patches/instagram/misc/share/privacy/SanitizeSha
 
 public final class app/revanced/patches/instagram/misc/signature/SignatureCheckPatchKt {
 	public static final fun getSignatureCheckPatch ()Lapp/revanced/patcher/patch/BytecodePatch;
+}
+
+public final class app/revanced/patches/instagram/story/flipping/DisableStoryAutoFlippingPatchKt {
+	public static final fun getDisableStoryAutoFlippingPatch ()Lapp/revanced/patcher/patch/BytecodePatch;
 }
 
 public final class app/revanced/patches/irplus/ad/RemoveAdsPatchKt {
@@ -430,8 +467,7 @@ public final class app/revanced/patches/kakaotalk/chatroom/PlayYoutubePlayerInCh
 }
 
 public final class app/revanced/patches/kakaotalk/chatroom/Remove300PlusLimitPatchKt {
-	public static final fun getRemove300PlusLimitBaseChatRoomPatch ()Lapp/revanced/patcher/patch/BytecodePatch;
-	public static final fun getRemove300PlusLimitOpenChatRoomPatch ()Lapp/revanced/patcher/patch/BytecodePatch;
+	public static final fun getRemove300PlusLimitChatRoomPatch ()Lapp/revanced/patcher/patch/BytecodePatch;
 }
 
 public final class app/revanced/patches/kakaotalk/emoticon/ForceEnableEmoticonPlusPatchKt {
@@ -554,12 +590,20 @@ public final class app/revanced/patches/kakaotalk/versioninfo/VersionInfoPatchKt
 	public static final fun getVersionInfoPatch ()Lapp/revanced/patcher/patch/BytecodePatch;
 }
 
+public final class app/revanced/patches/letterboxd/ads/HideAdsPatchKt {
+	public static final fun getHideAdsPatch ()Lapp/revanced/patcher/patch/BytecodePatch;
+}
+
 public final class app/revanced/patches/lightroom/misc/login/DisableMandatoryLoginPatchKt {
 	public static final fun getDisableMandatoryLoginPatch ()Lapp/revanced/patcher/patch/BytecodePatch;
 }
 
 public final class app/revanced/patches/lightroom/misc/premium/UnlockPremiumPatchKt {
 	public static final fun getUnlockPremiumPatch ()Lapp/revanced/patcher/patch/BytecodePatch;
+}
+
+public final class app/revanced/patches/lightroom/misc/version/DisableVersionCheckPatchKt {
+	public static final fun getDisableVersionCheckPatch ()Lapp/revanced/patcher/patch/BytecodePatch;
 }
 
 public final class app/revanced/patches/memegenerator/detection/license/LicenseValidationPatchKt {
@@ -638,12 +682,20 @@ public final class app/revanced/patches/music/layout/branding/CustomBrandingPatc
 	public static final fun getCustomBrandingPatch ()Lapp/revanced/patcher/patch/ResourcePatch;
 }
 
+public final class app/revanced/patches/music/layout/buttons/HideButtonsKt {
+	public static final fun getHideButtons ()Lapp/revanced/patcher/patch/BytecodePatch;
+}
+
 public final class app/revanced/patches/music/layout/castbutton/HideCastButtonKt {
 	public static final fun getHideCastButton ()Lapp/revanced/patcher/patch/BytecodePatch;
 }
 
 public final class app/revanced/patches/music/layout/compactheader/HideCategoryBarKt {
 	public static final fun getHideCategoryBar ()Lapp/revanced/patcher/patch/BytecodePatch;
+}
+
+public final class app/revanced/patches/music/layout/miniplayercolor/ChangeMiniplayerColorKt {
+	public static final fun getChangeMiniplayerColor ()Lapp/revanced/patcher/patch/BytecodePatch;
 }
 
 public final class app/revanced/patches/music/layout/navigationbar/NavigationBarPatchKt {
@@ -775,6 +827,10 @@ public final class app/revanced/patches/pandora/misc/EnableUnlimitedSkipsPatchKt
 	public static final fun getEnableUnlimitedSkipsPatch ()Lapp/revanced/patcher/patch/BytecodePatch;
 }
 
+public final class app/revanced/patches/peacocktv/ads/HideAdsPatchKt {
+	public static final fun getHideAdsPatch ()Lapp/revanced/patcher/patch/BytecodePatch;
+}
+
 public final class app/revanced/patches/photomath/detection/deviceid/SpoofDeviceIdPatchKt {
 	public static final fun getGetDeviceIdPatch ()Lapp/revanced/patcher/patch/BytecodePatch;
 }
@@ -829,6 +885,10 @@ public final class app/revanced/patches/protonmail/account/RemoveFreeAccountsLim
 
 public final class app/revanced/patches/protonmail/signature/RemoveSentFromSignaturePatchKt {
 	public static final fun getRemoveSentFromSignaturePatch ()Lapp/revanced/patcher/patch/ResourcePatch;
+}
+
+public final class app/revanced/patches/protonvpn/delay/RemoveDelayPatchKt {
+	public static final fun getRemoveDelayPatch ()Lapp/revanced/patcher/patch/BytecodePatch;
 }
 
 public final class app/revanced/patches/rar/misc/annoyances/purchasereminder/HidePurchaseReminderPatchKt {

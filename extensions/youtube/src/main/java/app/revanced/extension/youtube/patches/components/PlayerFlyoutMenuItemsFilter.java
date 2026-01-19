@@ -12,13 +12,9 @@ import java.util.List;
 public class PlayerFlyoutMenuItemsFilter extends Filter {
 
     public static final class HideAudioFlyoutMenuAvailability implements Setting.Availability {
-        private static final boolean AVAILABLE_ON_LAUNCH = !SpoofVideoStreamsPatch.spoofingToClientWithNoMultiAudioStreams();
-
         @Override
         public boolean isAvailable() {
-            // Check conditions of launch and now. Otherwise if spoofing is changed
-            // without a restart the setting will show as available when it's not.
-            return AVAILABLE_ON_LAUNCH && !SpoofVideoStreamsPatch.spoofingToClientWithNoMultiAudioStreams();
+            return !SpoofVideoStreamsPatch.spoofingToClientWithNoMultiAudioStreams();
         }
 
         @Override
@@ -63,12 +59,12 @@ public class PlayerFlyoutMenuItemsFilter extends Filter {
                         "volume_stable_"
                 ),
                 new ByteArrayFilterGroup(
-                        Settings.HIDE_PLAYER_FLYOUT_HELP,
-                        "yt_outline_question_circle_"
+                        Settings.HIDE_PLAYER_FLYOUT_LISTEN_WITH_YOUTUBE_MUSIC,
+                        "yt_outline_youtube_music_"
                 ),
                 new ByteArrayFilterGroup(
-                        Settings.HIDE_PLAYER_FLYOUT_MORE_INFO,
-                        "yt_outline_info_circle_"
+                        Settings.HIDE_PLAYER_FLYOUT_HELP,
+                        "yt_outline_question_circle_"
                 ),
                 new ByteArrayFilterGroup(
                         Settings.HIDE_PLAYER_FLYOUT_LOCK_SCREEN,
